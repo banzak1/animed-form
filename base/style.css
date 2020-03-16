@@ -80,9 +80,9 @@ form .input-block:nth-child(1){
 
 form .input-block:nth-child(2){
   
-  animation: move 300ms;
+  animation: move 300ms backwards;
   animation-delay: 150ms;
-  animation-fill-mode: backwards;
+  
 }
 
 form .btn-login {
@@ -115,8 +115,8 @@ form .btn-login {
 }
 
 .form-hide {
-  animation: down 500ms forwards;
-  
+  animation: down 1s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @keyframes down {
