@@ -86,9 +86,9 @@ form .input-block:nth-child(2){
 }
 
 form .btn-login {
-  animation: move 300ms;
+  animation: move 300ms backwards;
   animation-delay: 250ms;
-  animation-fill-mode: backwards;
+  
 }
 
 @keyframes fade {
@@ -111,5 +111,19 @@ form .btn-login {
   to {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+
+.form-hide {
+  animation: down 500ms forwards;
+  
+}
+
+@keyframes down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
   }
 }
